@@ -1,0 +1,120 @@
+/* sintaxe para obs */
+
+body {
+    font-family: Arial, sans-serif;
+    background:#202124;
+    color:#e8e8e8;
+    display: flex;
+    flex-direction:column; /* para ficar na vertical todos os itens */
+    min-height:100vh; /* altura total da tela */
+}
+
+a {
+    color:#bdc1c6;
+    text-decoration:none; /* ficar sem listas abaixo da palavra */
+    font-size:14px;
+}
+
+a:hover {
+    text-decoration:underline;
+}
+
+header nav { /* para ficar em formato nav */
+    display:flex;
+    justify-content:flex-end;
+    gap: 1rem; /* é o espacamento entre os itens */
+    padding:1rem;  /* é o espacamento entre as margens superiores e inferiores */
+}
+
+main {
+    flex:1; /* para ocupar o maximo de espaço possivel */
+    display:flex; 
+    flex-direction:column;
+    justify-content:center; /* centralizar a coluna principal */
+    align-items:center; /* centralizar o conteudo principal */
+    padding-bottom:100px;
+}
+.logo {
+    width:272px;
+    margin-bottom:2rem;
+}
+
+.barra {
+    display:flex;
+    align-items:center;
+    border:1px solid #5f6368;  /*adiciona uma borda na bala */
+    background:#303134;
+    border-radius:24px;  /* arredontamento da borda */
+    max-width:580px; 
+    width:100%; 
+    height:46px;
+    padding:0 1rem; /* espacamento entre as margens laterais */
+}
+
+.barra:hover {
+    background:#3c4043;
+    border-color:#3c4043;
+}
+
+.barra input {
+    flex:1;
+    background:none; 
+    border:none;  /* feito para adicionar a transparencia da pesquisa */
+    outline:none;
+    color:#e8e8e8; 
+    font-size:16px; 
+    margin:0 .8rem;
+    cursor: pointer;  /* animacao do mouse */
+}
+
+.material-symbols-outlined {
+    font-size:22px;
+    color:#9aa0a6; 
+
+}
+
+.mic {
+    color:#8ab4f8;
+}
+
+.botoes {
+    margin-top:1.8rem;
+    display:flex; 
+    gap:1rem;
+    cursor: pointer;
+}
+
+.botoes button {
+  background:#303134; 
+  border:1px solid #303134;
+  border-radius:4px; 
+  color:#e8e8e8;
+  font-size:14px; 
+  padding:10px 16px; 
+}
+
+.botoes button:hover {
+    border-color:#5f6368;
+}
+
+footer {
+    background:#171717;
+    font-size:14px; color:#999da2;
+}
+
+.local {
+    padding:15px 30px;
+    border-bottom:1px
+    solid #3c4043;
+}
+
+.links {
+  display:flex; 
+  justify-content:space-between; /* para ficar nas extremidades */
+  padding:15px 30px;
+}
+
+.links a {
+    color:#999da2; 
+    padding:0 10px;
+}
